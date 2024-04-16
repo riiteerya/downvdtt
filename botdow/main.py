@@ -30,9 +30,9 @@ def start(client, message):
         ]
     )
     message.reply_text(
-        "Hello there, I am **TikTok Downloader Bot**.\nI can download TikTok videos without Watermark.\n\n"
-        "__**Developer :**__ __@JayBeeDev__\n"
-        "__**Language :**__ __Python__\n"
+        "Xin chào, tôi là **TikTok Downloader Bot**.\nTôi có thể tải xuống video TikTok mà không có watermark.\n\n"
+        "__**Nhà phát triển :**__ __@JayBeeDev__\n"
+        "__**Ngôn ngữ :**__ __Python__\n"
         "__**Framework :**__ __🔥 Pyrogram__",
         parse_mode='markdown',
         reply_markup=kb
@@ -50,8 +50,8 @@ def help(client, message):
         ]
     )
     message.reply_text(
-        "Hello there, I am **TikTok Downloader Bot**.\nI can download any TikTok video from a given link.\n\n"
-        "__Send me a TikTok video link__",
+        "Xin chào, tôi là **TikTok Downloader Bot**.\nTôi có thể tải xuống bất kỳ video TikTok nào từ một liên kết được chỉ định.\n\n"
+        "__Hãy gửi cho tôi một liên kết video TikTok__",
         parse_mode='markdown',
         reply_markup=kb
     )
@@ -82,7 +82,7 @@ def tiktok_dl(client, message):
         caption = f"**Video URL:** {link}"
         message.reply_video("video.mp4", caption=caption)
     else:
-        message.reply_text("Sorry, I couldn't download the video.")
+        message.reply_text("Xin lỗi, tôi không thể tải xuống video.")
 
 
 app.run()
