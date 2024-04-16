@@ -34,7 +34,7 @@ def start(client, message):
         "__**Developer :**__ __@JayBeeDev__\n"
         "__**Language :**__ __Python__\n"
         "__**Framework :**__ __🔥 Pyrogram__",
-        parse_mode='md',
+        parse_mode='markdown',
         reply_markup=kb
     )
 
@@ -52,7 +52,7 @@ def help(client, message):
     message.reply_text(
         "Hello there, I am **TikTok Downloader Bot**.\nI can download any TikTok video from a given link.\n\n"
         "__Send me a TikTok video link__",
-        parse_mode='md',
+        parse_mode='markdown',
         reply_markup=kb
     )
 
